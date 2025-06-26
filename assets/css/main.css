@@ -1,0 +1,434 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    --text-color: #ffff;
+    --black-color: #000000;
+    --grey-color: #a8a8a8;
+    --primary-color: #ff2f00;
+    font-family: 'Roboto', sans-serif;
+}
+/* PC LAPTOP */
+.web{
+    width: 100%;
+    height: auto;
+}
+/* HEADER */
+.header{
+    width: 100%;
+    height: 46px;
+    background-color: var(--black-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 1;
+}
+.nav{
+    display: flex;
+    list-style: none;
+    width: 96%;
+    text-align: center;
+    align-items: center;
+    position: relative;
+}
+.nav > li > a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding:14px 30px;
+    
+}
+.nav__item{
+    background-color: var(--text-color);
+    position: relative;
+    top: 88px;
+    left: -124px;
+    display: none;
+}
+.nav__item > .nav__item--list{
+
+    list-style: none;
+}
+.nav__item > .nav__item--list > .nav__item--list-link{
+    text-decoration: none;
+    padding: 12px 16px;
+    color: var(--black-color);
+}
+.nav > li:hover.nav__item{
+    display: block;
+    background-color: var(--black-color);
+    background-color: var(--grey-color);
+}
+.search{
+    color: var(--text-color);
+    width: 4%;
+    display: flex;
+    padding-left: 20px;
+    align-items: center;
+}
+.search i{
+    font-size: 18px;
+}
+.nav > li >:hover{
+    background-color: var(--grey-color);
+    color: var(--black-color);
+}
+.search:hover{
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+/* SLIDER */
+.slider{
+    width: 100%;
+}
+.slider img{
+    width: 100%;
+}
+.slider__intro{
+    position: absolute;
+    bottom: 0px;
+    left: 37%;
+    text-align: center;
+    color: var(--text-color);
+    padding: 0 30px;
+}
+.slider__intro h3{
+    margin: 30px 0;
+    font-size: 26px;
+    font-weight: 100;
+}
+.slider__intro span{
+    margin: 30px 0 50px;
+    font-weight: 600;
+}
+/* ABOUT */
+.container{
+    width: 100%;
+    height: auto;
+}
+.band{
+    margin: 0 250px;
+    text-align: center;
+    padding: 64px 30px;
+}
+.band > h2{
+    margin: 15px 0;
+    letter-spacing: 6px;
+    font-weight: 100;
+    font-size: 30px;
+}
+.band > span{
+    margin: 20px 0;
+    font-style: italic;
+    color: var(--grey-color);
+}
+.band > p{
+    margin: 20px 0;
+    font-size: 16px;
+}
+.about__row{
+    display: flex;
+    padding: 32px 0;
+    width: 100%;
+}
+.about__row--col{
+    width: 33.3%;
+    height: 222px;
+    text-align: center;
+}
+.about__row--col > img{
+    width: 155px;
+    height: 155px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+}
+.about__row--col > p{
+    margin: 15px 0;
+}
+/* TOUR */
+ .tour{
+    width: 100%;
+    text-align: center;
+    padding: 64px 16px;
+    background-color: var(--black-color);
+}
+.tour > h2{
+    color: var(--text-color);
+    margin: 15px 0;
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 6px;
+}
+.tour__remember{
+    margin: 20px 0;
+    font-style: italic;
+    color: var(--grey-color);
+}
+.tour > li{
+    border: 1px solid var(--grey-color);
+    margin: auto;
+    width: 766px;
+    height: 38px;
+    text-align: left;
+    list-style: none;
+    padding: 8px 16px;
+    color: var(--grey-color);
+    background-color: var(--text-color);
+    display: flex;
+    justify-content: space-between;
+}
+.tour > li > .tour__quantity{
+    padding: 0 8px;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    margin-left: 12px;
+}
+.tour > li > .tour__tickets{
+    padding: 0 6px;
+    background-color: var(--black-color);
+    color: var(--text-color);
+    border-radius: 60%;
+}
+.tour__product{
+    display: flex;
+    padding: 32px 8px;
+    width: 766px;
+    margin: auto;
+    justify-content: center;
+}
+.tour__product--item{
+    width: 245px;
+    background-color: var(--text-color);
+    margin: 0 8px;
+}
+.tour__product--item > img{
+    width: 245px;
+    height: 183px;
+}
+.tour__product--item > img:hover{
+    opacity: .8;
+}
+.tour__product--item p{
+    padding: 0 16px;
+    text-align: left;
+    margin: 15px 0;
+}
+.tour__date{
+    color: var(--grey-color);
+}
+.tour__product--item .tour__btn{
+    padding: 0 16px;
+    text-align: left;
+
+}
+.tour__btn button{
+    margin-bottom: 16px;
+    color: var(--text-color);
+    padding: 10px 16px;
+    background-color: var(--black-color);
+    border: none;
+    font-size: 16px;
+}
+.tour__btn > button:hover{
+    background-color: var(--grey-color);
+    color: var(--black-color);
+    cursor: pointer;
+}
+.contact{
+    width: 100%;
+    margin: auto;
+}
+.contact__info{
+    margin: 0 155px;
+    padding: 70px 220px;
+}
+/* CONTACT */
+.contact__info--person{
+    display: flex;
+}
+.contact__contact{
+    margin-left: auto;
+}
+.contact h2{
+    margin: 20px 0;
+    font-weight: 100;
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-align: center;
+}
+.contact__p{
+    text-align: center;
+    margin: 20px 0;
+    font-style: italic;
+    color: var(--grey-color);
+}
+.contact__info--person{
+    padding: 20px 0;
+}
+.contact__info--address{
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+.contact__info--address > p > i{
+    padding-right: 10px;
+}   
+.contact__info--address > p{
+    margin-bottom: 10px;
+
+}
+.contact__person--info > input{
+    padding: 8px;
+    font-size: 14px;
+}
+.contact__contact > input{
+    width: 368px;
+    height: 36px;
+    padding: 8px;
+    margin: 6px 0;
+}
+.contact__contact > button{
+    float: right;
+    padding: 8px 16px;
+    background-color: var(--black-color);
+    border: none;
+}
+.contact__contact > button > a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.contact__contact > button:hover{
+    background-color: var(--grey-color);
+    color: var(--grey-color);
+}
+/* MAP */
+.map > img{
+    width: 100%;
+}
+/* FOOTER */
+.footer{
+    width: 100%;
+}
+.footer__social{
+    text-align: center;
+
+    padding: 64px 0;
+}
+.footer__social--icon{
+    padding: 10px 0;
+}
+.footer__social--icon > a{
+    color: var(--grey-color);
+    font-size: 20px;
+    padding:0 4px;
+}
+.footer__link{
+    text-decoration: none;
+    color: var(--grey-color);
+}
+.footer__p > p{
+    margin: 10px 0;
+}
+/* MOBILE */
+@media(max-width: 600px) and (min-width: 390px){
+    .header{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        justify-content: space-between;
+    }
+    .search{
+        width: 50px;
+        position: relative;
+        top: 0;
+        right: 0px;
+        text-align: center;
+    }
+    .reponsive{
+        display: flex;
+    }
+    .not-reponsive{
+        display: none;
+    }
+    .container{
+        min-width: 500px;
+    }
+    .band{
+        margin: 0 10px;
+        padding: 64px 30px;
+    }
+    .about__row{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .tour{
+        width: 100%;
+        /* flex-direction: column;
+        display: flex; */
+        text-align: center;
+        /* justify-content: center; */
+        /* padding: 10px 10px; */
+    }
+    .tour > li{
+        width: 440px;
+        text-align: center;
+        display: flex;
+        justify-items: center;
+    }
+    .tour .tour__product{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        padding: 0 16px;
+    }
+    .tour__product > .tour__product--item{
+        width: 440px;
+        height: 540px;
+    }
+    .tour__product--item{
+        margin: 10px 0;
+    }
+    .tour__product--item > img{
+        width: 100%;
+        height: 340px;
+    }
+    .contact{
+        text-align: left;
+        display: flex;
+        justify-content: center;
+
+    }
+    .contact__info--address{
+        width: 390px;
+    }
+    .contact__contact{
+        width: 390px;
+    }
+    .contact__contact > button{
+        text-align: right;
+        margin-right: 20px;
+    }
+    .contact__info > h2{
+        text-align: center;
+        width: 390px;
+    }
+    .contact__p{
+        text-align: center;
+        width: 390px;
+    }
+    .contact__info--person{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+}
+/* TABLET */
+@media (max-width: 999px) and (min-width: 501px){
+    
+}
